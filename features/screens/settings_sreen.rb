@@ -19,7 +19,9 @@ class SettingsScreen < Calabash::IBase # :nodoc:
       touch('UISwitch')
     end
     sleep(4) #debug slowdown
+  end
 
+  def save_settings
     tap_mark('Save Settings')
   end
 
@@ -32,6 +34,7 @@ class SettingsScreen < Calabash::IBase # :nodoc:
 
   def new_game
     tap_mark('New Game')
+    sleep(1)
     wait_for_element_exists("label marked :'Are you sure?'")
     touch("label index: #{ 6 }") # 6th label is the New Game button on the modal
   end

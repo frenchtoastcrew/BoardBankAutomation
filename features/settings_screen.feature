@@ -13,7 +13,7 @@ Feature: Settings screen
     Then I should be redirected to a clean Home Screen
 
   Scenario: Cancel settings change
-    When I fill out custom settings without saving
-    And I tap Cancel
+    When I fill out custom settings
+    And I tap Cancel without saving
     Then I should see no settings are saved
 

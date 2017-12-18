@@ -4,6 +4,7 @@ Automated test suite for the BoardBank app
 ## Intro:
   This is a humble attempt on automating the BoardBank app for iOS
   using the Calabash mobile testing framework with Ruby
+  Calabash predefined steps are not used here..everything custom.
   Number of test scenarios is far from exhaustive, but is indeed intended to briefly showcase how easy and fast could one automate their app.
 ## Future development (what to expect in next versions): 
   * more code comments 
