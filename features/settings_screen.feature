@@ -12,4 +12,8 @@ Feature: Settings screen
     When I tap New Game
     Then I should be redirected to a clean Home Screen
 
+  Scenario: Cancel settings change
+    When I fill out custom settings without saving
+    And I tap Cancel
+    Then I should see no settings are saved
 
